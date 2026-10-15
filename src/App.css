@@ -1,0 +1,318 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #24251f;
+  background: #faf9f6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button, input {
+  font: inherit;
+}
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar {
+  min-height: 76px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-bottom: 1px solid #eeece5;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.logo span, .hero h1 span {
+  color: #b8754e;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 32px;
+  color: #66665e;
+  font-size: 14px;
+}
+
+.navbar nav a:hover {
+  color: #b8754e;
+}
+
+.login-button, .explore-button, .publish-banner button {
+  border: none;
+  border-radius: 7px;
+  background: #283d32;
+  color: white;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.hero {
+  padding: 100px 20px 110px;
+  text-align: center;
+  background: linear-gradient(135deg, #f5efe4, #faf9f6 70%);
+}
+
+.eyebrow {
+  color: #a76d48;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(42px, 6vw, 68px);
+  line-height: 1.12;
+  margin: 24px 0;
+  font-weight: 600;
+}
+
+.hero-text {
+  max-width: 520px;
+  margin: 0 auto 30px;
+  color: #6f7068;
+  line-height: 1.8;
+}
+
+.explore-button {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.library {
+  padding: 75px 8%;
+}
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.section-heading h2, .publish-banner h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 35px;
+  margin: 8px 0;
+}
+
+.section-heading input {
+  width: 270px;
+  max-width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #deddd4;
+  border-radius: 7px;
+  outline-color: #b8754e;
+  background: #fff;
+}
+
+.novel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.novel-card {
+  background: #fff;
+  border: 1px solid #eeece5;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.novel-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px #29251b12;
+}
+
+.novel-cover {
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  color: #fff;
+}
+
+.novel-cover span {
+  font-size: 54px;
+}
+
+.novel-cover small {
+  letter-spacing: 3px;
+  font-size: 10px;
+}
+
+.cover-1 {
+  background: linear-gradient(140deg, #354d3b, #80906a);
+}
+
+.cover-2 {
+  background: linear-gradient(140deg, #263958, #8a92bd);
+}
+
+.cover-3 {
+  background: linear-gradient(140deg, #874f56, #d9a68b);
+}
+
+.novel-info {
+  padding: 22px;
+}
+
+.genre {
+  color: #a76d48;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.novel-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  margin: 8px 0;
+}
+
+.author, .description {
+  color: #77786f;
+  font-size: 13px;
+}
+
+.description {
+  min-height: 60px;
+  line-height: 1.7;
+}
+
+.read-button {
+  border: none;
+  padding: 10px 0;
+  background: transparent;
+  color: #304d3a;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.empty-message {
+  padding: 30px 0;
+  color: #77786f;
+  text-align: center;
+}
+
+.publish-banner {
+  margin: 0 8% 75px;
+  padding: 40px;
+  border-radius: 12px;
+  background: #eae9df;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.publish-banner p:last-child {
+  color: #6f7068;
+  line-height: 1.6;
+}
+
+footer {
+  padding: 35px 8%;
+  text-align: center;
+  background: #fff;
+  border-top: 1px solid #eeece5;
+}
+
+footer p, footer small {
+  color: #77786f;
+  font-size: 13px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    padding: 18px 5%;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .navbar nav {
+    gap: 15px;
+  }
+
+  .novel-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .section-heading {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .section-heading input {
+    width: 100%;
+  }
+
+  .publish-banner {
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 28px;
+  }
+}
+
+@media (max-width: 520px) {
+  .navbar nav {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .login-button {
+    padding: 10px 13px;
+  }
+
+  .hero {
+    padding: 75px 20px;
+  }
+
+  .library {
+    padding: 55px 5%;
+  }
+
+  .novel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .publish-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
